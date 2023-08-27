@@ -18,7 +18,6 @@ const authenticationMiddleware = async(req,res,next)=>{
     } catch (error) {
         throw new UnauthenticatedError('Not authorized to access this route')
     }
-
 }
 
 module.exports = authenticationMiddleware
